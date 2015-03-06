@@ -1,10 +1,16 @@
 __author__ = 'zardosht'
 
 import wx
+import MainWindow
 
 
-app = wx.App()
-frame = wx.Frame(None, -1, 'strucWrite', style=wx.DEFAULT_FRAME_STYLE & (~wx.RESIZE_BORDER))
-frame.Show()
+def main():
+    app = wx.App()
+    main_window = MainWindow.MainWindow(None)
+    main_window.Show()
 
-app.MainLoop()
+    app.MainLoop()
+
+
+if __name__ == '__main__':
+    main()
